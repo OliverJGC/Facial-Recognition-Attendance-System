@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+
+    <title>Attendance System</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h1>Attendance System</h1>
+
+            <hr />
+            <ul>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Employees</a></li>
+                <li><a href="#">Reports</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="header">
+                <h1>DASHBOARD</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel leo vehicula, vestibulum quam ac,
+                    bibendum elit.</p>
+            </div>
+
+            <div class="info-dashboard-container">
+                <div class="info-dashboard">
+                    <img class="employe-picture" width="120px" height="120px" src="../static/img/employee.png" />
+                    <h1>3</h1>
+                    <h2>EMPLOYEES</h2>
+                </div>
+
+                <div class="info-dashboard">
+                    <img class="calendar-picture" width="110px" height="110px" src="../static/img/calendar.png" />
+                    <h1>3</h1>
+                    <h2>ATTENDANCE</h2>
+                </div>
+
+                <div class="info-dashboard">
+                    <p>lor</p>
+                </div>
+            </div>
+
+            <div class="options-dashboard-container">
+                <div class="camera-dashboard">
+                    <p>Scanning...</p>
+                    <img src="{{ url_for('video' ) }}" class="camera"/>
+                </div>
+
+                <div class="table-container">
+                    <table class="table-dashboard">
+                        <thead>
+                            <tr>
+                                <th>EMPLOYEE</th>
+                                <th>CHECK IN</th>
+                                <th>CHECK OUT</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Dom</td>
+                                <td>6000</td>
+                                <td>6000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

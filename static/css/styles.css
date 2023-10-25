@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex: 1; 
+    background-color: #E2EAF7;
+}
+
+/* Sidebar */
+
+.sidebar {
+    width: 20%;
+    background-color: #4159B2;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+}
+
+.sidebar h1 {
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.sidebar hr {
+    background-color: white;
+    width: 80%;
+    align-self: center;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #fff;
+    text-align: left;
+
+}
+
+/* Content */
+
+.content {
+    flex: 1;
+    justify-content: flex-start;
+    align-items: center;
+    
+    flex-direction: column;
+    display: flex;
+    height: 100%;
+    overflow: auto; 
+}
+
+
+/* Header */
+
+.header {
+    width: 95%;
+    height: fit-content;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+} 
+
+.header h1 {
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+.header p {
+    margin-left: 20px;
+}
+
+/* DASHBOARD */
+/* DASHBOARD */
+/* DASHBOARD */
+
+/* Info Dashboard */
+
+.info-dashboard-container {
+    width: 95%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.info-dashboard {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    border-radius: 3px;
+    width: 260px;
+    height: 250px;
+    background-color: white;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.info-dashboard h1{
+    font-size: 50px;
+    padding: 3px;
+}
+
+.info-dashboard h2{
+    font-size: 30px;
+    padding: 3px;
+    font-weight: 500;
+}
+
+/* Options Dashboard */
+
+.options-dashboard-container {
+    width: 95%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+/* Camera Dashboard */
+
+.camera-dashboard {
+    border-radius: 3px;
+    width: 39%;
+    height: 280px;
+    background-color: #4159B2;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+}
+
+.camera {
+    width: 100%;
+    height: 100%;
+    display: block; 
+}
+
+.camera-dashboard p{
+    color: white;
+    padding: 10px;
+}
+
+/* Table Dashboard */
+
+.table-container {
+    width: 59%;
+    height: 280px;
+    overflow-y: auto;
+    border-radius: 3px;
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.table-dashboard {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-dashboard thead {
+    background-color: #4159B2;
+    border-radius: 3px;
+}
+
+.table-dashboard th {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.table-dashboard th, .table-dashboard td {
+    padding: 12px 15px;
+    text-align: left;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* EMPLOYES */
+/* EMPLOYES */
+/* EMPLOYES */
+
+/* Search Options Table */
+
+.search-options-container {
+    width: 95%;
+    background-color: white;
+    margin-top: 20px;
+    padding: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    border-radius: 3px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.search-options p{
+    text-align: left;
+    margin-left: 15px;
+}
+.search-options input {
+    background-color: #E9EEF6;
+    border: 1px #D0D0D0 solid;
+    border-radius: 3px;
+    margin-left: 25px;
+    width: 100%;
+    margin-top: 5px;
+    padding: 5px;
+}
+
+.search-container {
+    width: 40%;
+}
+.sort-container {
+    width: 15%;
+}
+.filter-container {
+    width: 15%;
+}
+.button-search-options {
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-search-options button{
+    border: none;
+    border-radius: 3px;
+    width: 100%;
+    font-size: 14px;
+    padding: 8px;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 1px;
+    background-color: #4159B2;
+}
+
+/* Table Employees */
+
+.table-container-employees-reports {
+    margin-top: 10px;
+    width: 97%;
+    height: 70%;
+    overflow-y: auto;
+    border-radius: 3px;
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.table-employees-reports {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-employees-reports thead {
+    background-color: #F2F6FC;
+    border-radius: 3px;
+}
+
+.table-employees-reports th {
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.table-employees-reports td {
+    color: black;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    border-bottom: 1px gray solid;
+}
+
+.table-employees-reports th, .table-employees-reports td {
+    padding: 12px 15px;
+    text-align: left;
+    font-family: 'Raleway', sans-serif;
+}
+
+.table-employees-reports-status {
+    width: 100%;
+    text-align: center;
+    padding: 6px 9px;
+    border-radius: 30px;
+}
+
+.status-green {
+    background-color: #C6EECD;
+    color: #409200 !important;
+}
+.status-yellow {
+    background-color: #FDF5AB;
+    color: #BDAD18 !important;
+}
+.status-red {
+    background-color: #FDABAB;
+    color: #BD2218 !important;
+}
+
+.table-employees-reports-update-buttons {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.update-buttons {
+    width: 45%;
+    height: 80%;
+    padding: 12px;
+    border: none;
+    border-radius: 3px;
+    color: white;
+}
+
+.update-buttons-edit {
+    background-color: #0C67F0;
+}
+
+.update-buttons-delete {
+    background-color: #ED4D4D;
+}

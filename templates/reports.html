@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+
+    <title>Attendance System</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h1>Attendance System</h1>
+
+            <hr />
+            <ul>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Employees</a></li>
+                <li><a href="#">Reports</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="header">
+                <h1>REPORTS</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel leo vehicula, vestibulum quam ac,
+                    bibendum elit.</p>
+            </div>
+
+            <div class="search-options-container">
+                <div class="search-container search-options">
+                    <p>Select Date</p>
+                    <input />
+                </div>
+
+                <div class="sort-container search-options">
+                    <p>Sort By:</p>
+                    <input />
+                </div>
+
+                <div class="filter-container search-options">
+                    <p>Filter By:</p>
+                    <input />
+                </div>
+
+                <div class="button-search-options">
+                    <button>SEARCH</button>
+                </div>
+            </div>
+
+            <div class="table-container-employees-reports">
+                <table class="table-employees-reports">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>FIRSTNAME</th>
+                            <th>LASTNAME</th>
+                            <th>CHECK IN</th>
+                            <th>CHECK OUT</th>
+                            <th>.</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Oliver</td>
+                            <td>Garcia Camarena</td>
+                            <td class="">
+                                <p class="table-employees-reports-status status-green">Working</p>
+                            </td>
+                            <td class="">
+                                <p class="table-employees-reports-status status-red">Working</p>
+                            </td>                            <td>
+                                <div class="table-employees-reports-update-buttons">
+                                    <button class="update-buttons update-buttons-edit">
+                                        Edit
+                                    </button>
+
+                                    <button class="update-buttons update-buttons-delete">
+                                        Delete
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
